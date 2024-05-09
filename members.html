@@ -7,43 +7,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <style>
-        /* CSS to make the image circular */
+        
         .avatar img {
             border-radius: 50%;
-            width: 160px; /* Set both width and height to the same value */
-            height: 160px; /* Set both width and height to the same value */
-            margin: 0 auto; /* Center the image horizontally */
-            display: block; /* Ensure the image is treated as a block element */
+            width: 160px; 
+            height: 160px; 
+            margin: 0 auto; 
+            display: block; 
         }
 
         .profile-info {
-            text-align: center; /* Align content horizontally to center */
+            text-align: center; 
         }
 
         .name {
-            display: block; /* Make the name a block-level element */
-            margin-top: 20px; /* Adjust the margin from the profile photo */
+            display: block; 
+            margin-top: 20px; 
         }
-
-        .members-container {
-            display: flex; /* Use flexbox for layout */
-        }
-
-        .member {
-            margin-right: 100px; /* Add some space between members */
+        a.name {
+            color: rgba(0, 0, 0, 0.562);
         }
 
 		.member:last-child {
-            margin-right: 20px; /* Add some space between members */
+            margin-right: 20px; 
         }
 
-		.members-container {
-    	margin-bottom: 20px; /* Add space below each .members-container */
+		.members-container:last-child {
+    	margin-bottom: 0; 
 		}
 
-		.members-container:last-child {
-    	margin-bottom: 0; /* Remove space below the last .members-container */
-		}
+        .members-container {
+            display: flex; 
+            flex-wrap: wrap; 
+            justify-content: center; 
+            margin-bottom: 50px; 
+        }
+        
+        .member {
+            margin-right: 100px;
+            margin-bottom: 20px; 
+            display: flex;
+            align-items: center; 
+        }
+        
+        .member .profile-info {
+            flex: 1; 
+            overflow: hidden; 
+            text-align: center;
+            max-height: 200px;
+        }
 
     </style>
 </head>
@@ -94,9 +106,9 @@
 							<div class="member">
                                 <div class="profile-info">
                                     <div class="avatar">
-                                        <img src="images/senazeynep.jpeg" alt="Profile Photo">
+                                        <img src="images/sena.jpeg" alt="Profile Photo">
                                     </div>
-                                    <a href="https://avesis.yildiz.edu.tr/17372" class="name">Sena Zeynep Kurtvuran</a>
+                                    <a href="https://avesis.yildiz.edu.tr/17372" class="name">Sümeyye Sena Kurtvuran</a>
                                 </div>
                             </div>
 
@@ -125,9 +137,9 @@
 							<div class="member">
                                 <div class="profile-info">
                                     <div class="avatar">
-                                        <img src="images/avatar.jpg" alt="Profile Photo">
+                                        <img src="images/ufukbasural.jpg" alt="Profile Photo">
                                     </div>
-                                    <span class="name">Ufuk</span>
+                                    <span class="name">Ufuk Başural</span>
                                 </div>
                             </div>
 
@@ -136,16 +148,16 @@
                                     <div class="avatar">
                                         <img src="images/avatar.jpg" alt="Profile Photo">
                                     </div>
-                                    <span class="name">Turabi</span>
+                                    <span class="name">Turabi Yıldırım</span>
                                 </div>
                             </div>
                             
                             <div class="member">
                                 <div class="profile-info">
                                     <div class="avatar">
-                                        <img src="images/avatar.jpg" alt="Profile Photo">
+                                        <img src="images/saadettin.jpg" alt="Profile Photo">
                                     </div>
-                                    <span class="name">Saadettin</span>
+                                    <span class="name">Saadettin Berber</span>
                                 </div>
                             </div>
 							
@@ -156,36 +168,27 @@
 							<div class="member">
                                 <div class="profile-info">
                                     <div class="avatar">
-                                        <img src="images/avatar.jpg" alt="Profile Photo">
+                                        <img src="images/orhan.jpg" alt="Profile Photo">
                                     </div>
-                                    <span class="name">Orhan</span>
+                                    <span class="name">Orkhan Karimli</span>
                                 </div>
                             </div>
 
 							<div class="member">
                                 <div class="profile-info">
                                     <div class="avatar">
-                                        <img src="images/avatar.jpg" alt="Profile Photo">
+                                        <img src="images/ilyas.jpg" alt="Profile Photo">
                                     </div>
-                                    <span class="name">İlyas</span>
+                                    <span class="name">İlyas Mustafazade</span>
                                 </div>
                             </div>
 
 							<div class="member">
                                 <div class="profile-info">
                                     <div class="avatar">
-                                        <img src="images/avatar.jpg" alt="Profile Photo">
+                                        <img src="images/sezai.jpg" alt="Profile Photo">
                                     </div>
-                                    <span class="name">Sezai</span>
-                                </div>
-                            </div>
-
-							<div class="member">
-                                <div class="profile-info">
-                                    <div class="avatar">
-                                        <img src="images/avatar.jpg" alt="Profile Photo">
-                                    </div>
-                                    <span class="name">New Member</span>
+                                    <span class="name">Muhammet Sezai İnce</span>
                                 </div>
                             </div>
 							
@@ -228,8 +231,7 @@
                     </header>
                     <ul class="contact">
                         <li class="icon solid fa-envelope"><a href="#">ackaraca@yildiz.edu.tr</a></li>
-                        <li class="icon solid fa-home">Yıldız Technical University, Davutpasa Campus, Computer Engineering, Esenler / İSTANBUL<br />
-                        </li>
+                        <li class="icon solid fa-home"><a href="https://maps.app.goo.gl/uuCUdpLAMn8tbmYq5" target="_blank">Yıldız Technical University, Davutpasa Campus, Computer Engineering, Esenler / İSTANBUL</a><br /></li></li>
                     </ul>
                 </section>
 
