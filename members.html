@@ -9,6 +9,27 @@
     <style>
 
         @media screen and (max-width: 768px) {
+            .avatar img {
+                border-radius: 50%;
+                width: 160px; 
+                height: 160px; 
+                margin: 0 auto; 
+                display: block; 
+            }
+    
+            .profile-info {
+                text-align: center; 
+            }
+    
+            .name {
+                display: block; 
+                margin-top: 18px;
+                font-size: 13.5px; 
+            }
+            a.name {
+                color: rgba(0, 0, 0, 0.562);
+            }
+    
             .member:first-child {
                 margin-left: 0px; 
             }
@@ -16,61 +37,90 @@
             .member:last-child {
                 margin-right: 100px; 
             }
+    
+            .members-container:last-child {
+            margin-bottom: 0; 
+            }
+    
+            .members-container {
+                display: flex; 
+                flex-wrap: wrap; 
+                justify-content: center; 
+                margin-bottom: 20px; 
+            }
+            
+            .member {
+                margin-right: 100px;
+                margin-bottom: 20px; 
+                display: flex;
+                align-items: center; 
+            }
+            
+            .member .profile-info {
+                flex: 1; 
+                overflow: hidden; 
+                text-align: center;
+                max-height: 200px;
+            }
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1980px) {
+            .avatar img {
+                border-radius: 50%;
+                width: 160px; 
+                height: 160px; 
+                margin: 0 auto; 
+                display: block; 
+            }
+    
+            .profile-info {
+                text-align: center; 
+            }
+    
+            .name {
+                display: block; 
+                margin-top: 18px;
+                font-size: 13.5px; 
+            }
+            a.name {
+                color: rgba(0, 0, 0, 0.562);
+            }
+    
+            .member:first-child {
+                margin-left: 50px; 
+            }
+    
+            .member:last-child {
+                margin-right: 50px; 
+            }
+    
+            .members-container:last-child {
+            margin-bottom: 0; 
+            }
+    
+            .members-container {
+                display: flex; 
+                flex-wrap: wrap; 
+                justify-content: center; 
+                margin-bottom: 20px; 
+            }
+            
+            .member {
+                margin-right: 100px;
+                margin-bottom: 20px; 
+                display: flex;
+                align-items: center; 
+            }
+            
+            .member .profile-info {
+                flex: 1; 
+                overflow: hidden; 
+                text-align: center;
+                max-height: 200px;
+            }
         }
 	    
-        .avatar img {
-            border-radius: 50%;
-            width: 160px; 
-            height: 160px; 
-            margin: 0 auto; 
-            display: block; 
-        }
-
-        .profile-info {
-            text-align: center; 
-        }
-
-        .name {
-            display: block; 
-            margin-top: 18px;
-            font-size: 13.5px; 
-        }
-        a.name {
-            color: rgba(0, 0, 0, 0.562);
-        }
-
-        .member:first-child {
-            margin-left: 50px; 
-        }
-
-	    .member:last-child {
-            margin-right: 50px; 
-        }
-
-	    .members-container:last-child {
-    	margin-bottom: 0; 
-		}
-
-        .members-container {
-            display: flex; 
-            flex-wrap: wrap; 
-            justify-content: center; 
-            margin-bottom: 20px; 
-        }
         
-        .member {
-            margin-right: 100px;
-            margin-bottom: 20px; 
-            display: flex;
-            align-items: center; 
-        }
-        
-        .member .profile-info {
-            flex: 1; 
-            overflow: hidden; 
-            text-align: center;
-            max-height: 200px;
-        }
 
     </style>
 </head>
