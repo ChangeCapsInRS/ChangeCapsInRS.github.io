@@ -7,6 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <style>
+
+        @media screen and (max-width: 768px) {
+            .member:first-child {
+                margin-left: 0px; 
+            }
+    
+            .member:last-child {
+                margin-right: 100px; 
+            }
+        }
 	    
         .avatar img {
             border-radius: 50%;
@@ -22,17 +32,22 @@
 
         .name {
             display: block; 
-            margin-top: 18px; 
+            margin-top: 18px;
+            font-size: 13.5px; 
         }
         a.name {
             color: rgba(0, 0, 0, 0.562);
         }
 
-	.member:last-child {
-            margin-right: 100px; 
+        .member:first-child {
+            margin-left: 50px; 
         }
 
-	.members-container:last-child {
+	    .member:last-child {
+            margin-right: 50px; 
+        }
+
+	    .members-container:last-child {
     	margin-bottom: 0; 
 		}
 
