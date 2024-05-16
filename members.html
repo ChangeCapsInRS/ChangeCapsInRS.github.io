@@ -16,10 +16,35 @@
             display: block; 
         }
 
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 736px) {
+        /* Adjust layout for smaller screens */
+
+            /* Change flex direction to display profile photo and name side by side */
+            .member {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .member .profile-info .name {
+                font-size: 9px; /* Adjust as needed */
+            }
+
+            /* Adjust margin between members for better spacing */
+            .member {
+                margin-right: 0;
+                margin-bottom: 40px; /* Increase or decrease as needed */
+            }
+
+            /* Adjust avatar size */
             .avatar img {
-                width: 100px; 
-                height: 100px; 
+                width: 100px;
+                height: 100px;
+            }
+
+            /* Adjust name font size */
+            .name {
+                font-size: 14px; /* Adjust as needed */
+                margin-top: 10px; /* Adjust spacing between photo and name */
             }
         }
 
