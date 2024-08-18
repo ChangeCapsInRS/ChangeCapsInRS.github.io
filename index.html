@@ -10,20 +10,42 @@
 			        #header {
             font-size: 1.2em;
         }
-		.content {
-            position: relative;
-            margin-top: -100px; 
+		@media screen and (max-width: 740px) {
+			.content {
+				position: relative;
+				margin-top: -30px; 
+			}
+			.imageobject {
+				margin-top: -10px; 
+			}
 		}
-		.imageobject {
-            margin-top: -50px; 
+		@media screen and (min-width: 740px) and (max-width: 1280px) {
+			.content {
+				position: relative;
+				margin-top: -70px; 
+			}
+			.imageobject {
+				margin-top: -30px; 
+			}
 		}
-		.coming-soon {
-            text-align: center;
-            font-weight: bold;
-            font-size: 1.2em;
-            color: #e74c3c;
-            margin-top: 30px;
-        }
+
+		@media screen and (min-width: 1280px) and (max-width: 1980px) {
+			.content {
+				position: relative;
+				margin-top: -100px; 
+			}
+			.imageobject {
+				margin-top: -50px; 
+			}
+		}
+			.coming-soon {
+				text-align: center;
+				font-weight: bold;
+				font-size: 1.2em;
+				color: #e74c3c;
+				margin-top: 30px;
+			}
+		
 		</style>
 
 	</head>
